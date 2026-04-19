@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advanced Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Advanced Mood Tracker</h1>
+
+    <div class="input-section">
+        <label>How are you feeling?</label>
+        <input type="text" id="moodText" placeholder="Type your mood...">
+
+        <label>Select an emoji:</label>
+        <div class="emoji-row">
+            <span class="emoji" data-mood="happy">😊</span>
+            <span class="emoji" data-mood="neutral">😐</span>
+            <span class="emoji" data-mood="sad">😢</span>
+            <span class="emoji" data-mood="angry">😡</span>
+        </div>
+
+        <button id="saveMood">Save Mood</button>
+    </div>
+
+    <h2>Mood History</h2>
+
+    <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="happy">😊 Happy</button>
+        <button class="filter-btn" data-filter="neutral">😐 Neutral</button>
+        <button class="filter-btn" data-filter="sad">😢 Sad</button>
+        <button class="filter-btn" data-filter="angry">😡 Angry</button>
+    </div>
+
+    <ul id="moodList"></ul>
+
+    <button id="clearMoods" class="danger">Clear All</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
